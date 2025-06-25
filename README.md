@@ -86,5 +86,5 @@ This project is developed for personal use and as a portfolio piece. Feel free t
 ---
 **Screenshots**
 
-![PastePort Screenshot](https://github.com/andrewtliem/PastePort/blob/main/Images/PastePort1.png)
+![PastePort Screenshot](https://github.com/andrewtliem/PastePort/blob/main/Images/pasteport-screenshot.gif)
 
