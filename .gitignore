@@ -1,11 +1,23 @@
-# macOS
-.DS_Store
-*.xcodeproj/project.xcworkspace/
-*.xcodeproj/xcuserdata/
+# Xcode
+*.xcuserdatad
+*.xccheckout
+*.moved-aside
+*.xcscmblueprint
+*.xcodeproj/project.xcworkspace/xcuserdata
 
-# Build artifacts
-/build/
-*.app
+# Build
+DerivedData/
+build/
+*.app/
+*.ipa
+*.dSYM
+
+# SwiftPM
+.swiftpm/
+.build/
+
+# macOS files
+.DS_Store
 
 # Screenshots
 /screenshots/ 
