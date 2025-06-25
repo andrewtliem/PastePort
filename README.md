@@ -3,9 +3,6 @@
 **An intelligent clipboard and screenshot manager for macOS, built to boost your productivity.**
 
 PastePort lives in your menu bar, automatically capturing everything you copy and every screenshot you take. It provides a beautiful, searchable, and organized history, so you never lose important information again.
-
-![PastePort Screenshot](https://raw.githubusercontent.com/andrewtliem/PastePort/main/screenshots/Screenshot%202025-06-22%20at%2020.33.03.png)
-
 ---
 
 ## 🌟 Core Features
@@ -85,3 +82,9 @@ This project is developed for personal use and as a portfolio piece. Feel free t
 ---
 
 **PastePort** - Never lose your clipboard content again! 📋✨
+
+---
+**Screenshots**
+
+![PastePort Screenshot](https://github.com/andrewtliem/PastePort/blob/main/Images/PastePort1.png)
+
