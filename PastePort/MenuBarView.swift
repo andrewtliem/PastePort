@@ -307,6 +307,7 @@ struct ItemRowView: View {
     
     @State private var isHovered = false
     @State private var isDragging = false
+    @State private var showCopied = false
     
     var body: some View {
         HStack(spacing: 12) {
@@ -456,6 +457,28 @@ struct ItemRowView: View {
                 isHovered = hovering
             }
         }
+        .onTapGesture {
+            performPrimaryAction()
+            showCopied = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                showCopied = false
+            }
+        }
+        .overlay(
+            Group {
+                if showCopied {
+                    Text("Copied!")
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .padding(8)
+                        .background(Color.accentColor.opacity(0.9))
+                        .foregroundColor(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                        .transition(.opacity.combined(with: .scale))
+                        .zIndex(1)
+                }
+            }
+        )
         .onDrag {
             withAnimation(.easeInOut(duration: 0.2)) {
                 isDragging = true
